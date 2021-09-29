@@ -16,8 +16,6 @@ public class Scorekeeper : MonoBehaviour
 
     private int score = 0;
 
-    private int highscore = 0;
-
     public int Score 
     {
         get { return score; }
