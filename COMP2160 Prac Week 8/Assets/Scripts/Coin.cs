@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("collide with: " + other.gameObject.name);
         Scorekeeper.Instance.AddPoints();
         Destroy(gameObject);
     }
