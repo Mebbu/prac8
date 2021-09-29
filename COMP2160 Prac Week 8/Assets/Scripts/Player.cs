@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private float vx;
-    private float vy;
+    private float vz;
     Vector3 Direction;
     Vector3 velocity;
     [SerializeField]
@@ -20,9 +20,9 @@ public class Player : MonoBehaviour
     void Update()
     {
         vx = Input.GetAxis("Horizontal");
-        vy = Input.GetAxis("Vertical");
+        vz = Input.GetAxis("Vertical");
 
-        Direction = new Vector3(vx, vy, 0);
+        Direction = new Vector3(vx, 0, vz);
         velocity = Direction * speed;
         transform.Translate(velocity * Time.deltaTime);
 
