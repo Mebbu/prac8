@@ -561,6 +561,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3242353303271180757, guid: bdd36145c3dfd1645801b0c62bd1f187, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242353303271180757, guid: bdd36145c3dfd1645801b0c62bd1f187, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.79
+      objectReference: {fileID: 0}
     - target: {fileID: 4933977998483704618, guid: bdd36145c3dfd1645801b0c62bd1f187, type: 3}
       propertyPath: m_Name
       value: CollectionOfCoin
