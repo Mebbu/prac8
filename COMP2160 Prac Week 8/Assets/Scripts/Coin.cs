@@ -6,6 +6,7 @@ public class Coin : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        Scorekeeper.Instance.addPoint();
+        Scorekeeper.Instance.AddPoints();
+        Destroy(gameObject);
     }
 }
