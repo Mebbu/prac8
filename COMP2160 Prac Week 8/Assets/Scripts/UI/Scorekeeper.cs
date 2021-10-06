@@ -16,17 +16,17 @@ public class Scorekeeper : MonoBehaviour
 
     private int score1 = 0;
 
-    //private int score2 = 0;
+    private int score2 = 0;
 
     public int Score1 
     {
         get { return score1; }
     }
 
-    // public int Score2 
-    // {
-    //     get { return score2; }
-    // }
+    public int Score2 
+    {
+        get { return score2; }
+    }
 
 
 
@@ -35,18 +35,19 @@ public class Scorekeeper : MonoBehaviour
         instance = this;
     }
 
-    public void AddPoints()
+    public void AddPointsPlayer1()
     {
         score1 += points;
     }
 
-    // public void AddPointsPlayer2()
-    // {
-    //     score2 += points;
-    // }
+    public void AddPointsPlayer2()
+    {
+        score2 += points;
+    }
 
     public void ResetScore()
     {
         score1 = 0;
+        score2 = 0;
     }
 }

@@ -7,7 +7,7 @@ public class Coin : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("collide with: " + other.gameObject.name);
-        Scorekeeper.Instance.AddPoints();
+        //Scorekeeper.Instance.AddPoints();
         Destroy(gameObject);
     }
 }

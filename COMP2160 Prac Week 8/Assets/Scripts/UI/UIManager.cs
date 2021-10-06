@@ -24,9 +24,9 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        int score = scorekeeper.Score1;
-        scoreTextPlayer1.text = string.Format(scoreFormat, score);
+        //int score = scorekeeper.Score1;
+        scoreTextPlayer1.text = string.Format(scoreFormat, scorekeeper.Score1);
         //int score = scorekeeper.Score2;
-        scoreTextPlayer2.text = string.Format(scoreFormat, score);
+        scoreTextPlayer2.text = string.Format(scoreFormat, scorekeeper.Score2);
     }
 }
