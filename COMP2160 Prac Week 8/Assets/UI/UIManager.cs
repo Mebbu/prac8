@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     [SerializeField]
-    private Text scoreText;
+    private Text scoreTextPlayer1;
+    [SerializeField]
+    private Text scoreTextPlayer2;
     
     [SerializeField]
     private string scoreFormat = "Score: {0}";
@@ -23,6 +25,7 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         int score = scorekeeper.Score;
-        scoreText.text = string.Format(scoreFormat, score);
+        scoreTextPlayer1.text = string.Format(scoreFormat, score);
+        scoreTextPlayer1.text = string.Format(scoreFormat, score);
     }
 }
