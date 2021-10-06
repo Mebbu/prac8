@@ -8,6 +8,15 @@ public class Coin : MonoBehaviour
     {
         Debug.Log("collide with: " + other.gameObject.name);
         //Scorekeeper.Instance.AddPoints();
-        Destroy(gameObject);
+        if (other.tag == "Player")
+        {
+            Scorekeeper.Instance.AddPointsPlayer1();
+        }
+
+        if (other.tag == "Player2")
+        {
+            Scorekeeper.Instance.AddPointsPlayer2();
+        }
+            Destroy(gameObject);
     }
 }
